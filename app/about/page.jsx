@@ -2,13 +2,17 @@ import React from 'react';
 import styles from './about.module.css'; // Ensure the path is correct
 import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import Image from 'next/image';
-
+import Head from 'next/head';
 import { DiBootstrap, DiCss3, DiHtml5, DiJavascript1, DiMongodb, DiNodejs, DiReact } from 'react-icons/di';
 import { SiC, SiExpress, SiFirebase } from 'react-icons/si';
 
 
 const About = () => {
   return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
     <div className={`container ${styles.container}`}>
       <div class={styles.con}>
       <div className={styles.headerLeft}>
@@ -30,16 +34,16 @@ const About = () => {
         </p><br />
         
         <div>
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/pothaakhila?tab=repositories" target="_blank" rel="noopener noreferrer">
             <FaGithub className={styles.icon} />
           </a>
           <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
             <FaFacebook className={styles.icon} />
           </a>
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/queen_of_mineworld/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className={styles.icon} />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/potha-akhila-6210491ba/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className={styles.icon} />
           </a>
         </div>
@@ -194,6 +198,7 @@ const About = () => {
   
 
     </div>
+    </>
   );
 };
 

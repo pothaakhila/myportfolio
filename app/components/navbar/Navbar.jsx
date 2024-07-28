@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import styles from './navbar.module.css';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -33,10 +34,14 @@ useEffect(()=>{
   };
 
   return (
+    <>
+     <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.navLogo} onClick={closeNavHandler}>
-        AKHILA YADHAV
+            POTHA AKHILA 
         </Link>
         {navOpen && (
           <ul className={styles.navItems}>
@@ -61,6 +66,7 @@ useEffect(()=>{
         </div>
       </div>
     </nav>
+    </>
   );
 }
 

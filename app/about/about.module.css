@@ -71,7 +71,7 @@
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid white;
-    animation: rotate 5s linear infinite;
+ 
     bottom:320px;
     right:90px;
   }

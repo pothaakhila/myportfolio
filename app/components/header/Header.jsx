@@ -9,7 +9,7 @@ import { RiInstagramLine, RiLinkedinBoxFill } from 'react-icons/ri';
 import styles from './header.module.css';
 import NaukriIcon from './NaukriIcon';
 import Image from 'next/image';
-
+import Head from 'next/head';
 
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa'; // LinkedIn icon
@@ -33,6 +33,10 @@ const Header = () => {
   }, []);
 
   return (
+    <> 
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
     <div className={styles.mainsection}>
       <div className={styles.container}>
         <div className={`col-md-7 ${styles.mainsectioncon}`} data-aos="fade-up" data-aos-duration="2000">
@@ -47,19 +51,19 @@ const Header = () => {
           </div>
           <div className={styles.icons}>
             <div data-aos="fade-up" data-aos-duration="2000">
-              <a href="https://www.naukri.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+              <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                 <NaukriIcon />
               </a>
               &nbsp;&nbsp;
-              <a href="https://github.com/pothaakhila" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+              <a href="https://github.com/pothaakhila?tab=repositories" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                 <FaGithub />
               </a>
               &nbsp;&nbsp;
-              <a href="https://www.linkedin.com/in/potha-akhila" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+              <a href="https://www.linkedin.com/in/potha-akhila-6210491ba/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                 <RiLinkedinBoxFill />
               </a>
               &nbsp;&nbsp;
-              <a href="https://www.instagram.com/pothaakhila" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+              <a href="https://www.instagram.com/queen_of_mineworld/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                 <RiInstagramLine />
               </a>
             </div>
@@ -129,10 +133,10 @@ const Header = () => {
               <a href="https://github.com/pothaakhila" target="_blank" rel="noopener noreferrer">
                 <FaGithub className={styles.icon} />
               </a>
-              <a href="https://www.linkedin.com/in/potha-akhila" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/potha-akhila-6210491ba/" target="_blank" rel="noopener noreferrer">
                 <RiLinkedinBoxFill className={styles.icon} />
               </a>
-              <a href="https://www.instagram.com/pothaakhila" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/queen_of_mineworld/" target="_blank" rel="noopener noreferrer">
                 <RiInstagramLine className={styles.icon} />
               </a>
             </div>
@@ -148,6 +152,7 @@ const Header = () => {
         </footer>
       </div>
     </div>
+    </>
   );
 };
 

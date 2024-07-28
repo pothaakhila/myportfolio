@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import styles from './portfolio.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Head from 'next/head';
 
 
 
@@ -14,6 +14,11 @@ const Page = () => {
     AOS.init();
   }, []);
   return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+ 
  <div className={`container ${styles.background}`}> 
   <h1>contact</h1>
     <div className={`container ${styles.container}`} data-aos="fade-up"
@@ -62,6 +67,7 @@ const Page = () => {
       </form>
     </div>
     </div>
+    </>
   )
 }
 

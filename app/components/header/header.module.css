@@ -1,0 +1,548 @@
+.mainsection {
+    background-image: url("https://st4.depositphotos.com/30440304/40044/i/450/depositphotos_400440126-stock-photo-trendy-geometric-abstract-background-minimalistic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-origin: content-box;
+    background-attachment: fixed;
+    height: 236vh; 
+   
+
+    padding-top: 15%;
+    overflow: hidden;
+   
+}
+
+/*contact*/
+
+/* app/contact/page.module.css */
+
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  position: relative;
+  left:570px;
+  bottom: 140px;
+}
+.sub{
+  color: #fff;
+  position: relative;
+  bottom:170px;
+  left:690px;
+  
+}
+.sub1{
+  color: #80afba;
+  position: relative;
+  bottom:150px;
+ text-align: center;
+}
+.contactOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #93bec7;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.contactOption:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contactIcon {
+  font-size: 2rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sub, .sub1 {
+  animation: fadeIn 1s ease-out;
+}
+
+.contactWrapper {
+ 
+  animation: fadeIn 1s ease-out 0.5s;
+}
+
+.contactOption {
+  animation: slideIn 1s ease-out;
+}
+
+/*contact*/
+
+
+
+
+.footers {
+  background-color: #e5ebeb;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+bottom:125px;
+
+background-attachment: fixed;
+
+}
+
+.footers .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ left:10px;
+ 
+}
+
+.footers .socialIcons {
+  margin-bottom: 1rem;
+}
+
+.footers .icon {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #d62222;
+  transition: color 0.3s;
+  height: 200px;
+  position: relative;
+  bottom:70px;
+  
+}
+
+ .footers .icon:hover {
+  color: #78b6e6;
+}
+
+.footers .links {
+  margin-bottom: 1rem;
+  position: relative;
+  bottom: 150px;
+}
+
+.footers .links a {
+  margin: 0 0.5rem;
+  color: #78b6e6;
+  text-decoration: none;
+}
+
+.footers .links a:hover {
+  text-decoration: underline;
+}
+
+ .copyright {
+font-size: 20px;
+  position: relative;
+  color: #82abda;
+  bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.buttons .btn {
+    display: inline-flex;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #82abda; /* Primary button color */
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
+   
+    color: var(--bg-color);
+  }
+  .btn{
+    transition: .5s !important;
+    border: .2rem solid rgb(92, 125, 148)!important;
+    border-radius: .8rem;
+  }
+  .btn:nth-child(2){
+    background: transparent;
+    color: rgb(92, 125, 148);
+  }
+
+  .btn:hover {
+    background-color: #005bb5; /* Darker shade for hover state */
+  
+  }
+ 
+  .header {
+    display: flex;
+   
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 100px;
+
+   justify-content: space-around;
+ 
+   margin-top: 20px;
+
+    background-color: #e0e5e9;
+    width: 100%; /* Ensure it doesn't overflow */
+    overflow: hidden; /* Hide any overflow */
+  
+   
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-origin: content-box;
+    margin-bottom: 120px;
+ 
+ 
+   
+  
+  }
+  .headerLeft {
+    flex: 1;
+  }
+  
+  .headerCta {
+    margin-top: 1rem;
+  }
+  
+  .headerRight {
+    flex: 1;
+   height: 100px;
+   margin-bottom: 20px;
+    /* Add any additional styles for the right section of the header if needed */
+  }
+  .h1{
+    position: relative;
+    top:50px;
+  }
+  
+.headerLeft {
+    flex: 1;
+  }
+  .par{
+    color: #fff;
+  }
+  .headerRight {
+    flex: 1;
+    position: relative;
+    top: 500px;
+  }
+ .h3{
+  font-size: 3.0rem;
+  font-weight: 700;
+  position: relative;
+  bottom:20px;
+  color: transparent;
+  -webkit-text-stroke: .7px rgb(150, 196, 221);
+ }
+ .para{
+  color: #fff;
+ }
+ .head{
+  color: aliceblue;
+  position: relative;
+bottom:30px;
+ }
+ .icons{
+  position: relative;
+ top:180px;
+  left:870px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+ }
+ .container{
+  position: relative;
+top:20px;
+  left:180px;
+ }
+
+ /* Add these styles to your header.module.css */
+
+
+.card {
+  background:#41b5d2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width:300px; /* Adjust width based on the number of columns you want */
+  transition: transform 0.3s ease;
+  position: relative;
+  left: 810px;
+  bottom:250px;
+ 
+  
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.a .img {
+  width: 90%;
+  height: 350px;
+position: relative;
+top:5px;
+}
+
+.buttons{
+  position: relative;
+ bottom:350px !important;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .buttons{
+    position: relative;
+    top:-280px;
+    right:110px;
+
+  }
+  .h3{
+    font-size: 1rem;
+    position: relative;
+    right:50px;
+  }
+  .header{
+    width: 380px;
+    border-radius: 5px;
+    height: 600px;
+    position: relative;
+    bottom:-170px;
+    left:20px;
+    background-color: #fff;
+  }
+  .header .courses{
+    font-size: 16px;
+    color: #6ba4e4;
+    position: relative;
+    top: -40px;
+  }
+  .header .certificate1{
+    position: relative;
+    top: -30px;
+    left:-160px;
+    width: 350px;
+  }
+  .header .certificate2{
+    position: relative;
+    top: -30px;
+    left:-160px;
+    width: 350px;
+  }
+  .header .certificate3{
+    position: relative;
+    top: -30px;
+    left:-160px;
+    width: 350px;
+  }
+  .header .certificate4{
+    position: relative;
+    top: -30px;
+    left:-160px;
+    width: 350px;
+  }
+  .para{
+    font-size: 12px;
+    position: relative;
+    right:155px;
+  }
+.card{
+  position: relative;
+  left:-95px;
+  top:125px;
+height: 280px;
+width: 250px;
+}
+
+
+.icons{
+  position: relative;
+left:-70px;
+  top:470px;
+}
+.contactWrapper{
+  position: relative;
+left: 15px;
+top:190px;
+}
+.h .sub1{
+  position: relative;
+  top:185px;
+}
+.h .sub{
+  position: relative;
+  top:165px;
+  left: 140px;
+}
+.mainsectioncon{
+position: relative;
+bottom: 280px;
+}
+.footers .footer {
+position: relative;
+bottom:210px ;
+height: 20vh ;
+}
+.mainsection .container{
+  position: relative;
+top: 220px;
+}
+
+.footers {
+  background-color: #e5ebeb;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+top:245px;
+
+background-attachment: fixed;
+
+}
+
+.head{
+
+  position: relative;
+  right: 90px;
+}
+  @keyframes identifier{
+      to{
+transform: rotate(0);
+opacity: 1;
+      }
+  }
+}
+/*footer*/
+
+.certificate1{
+ 
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  right:470px;
+  top:60px;
+background-color: #666;
+}
+.certificate2{
+ 
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  right:470px;
+  width: 548px;
+  top:70px;
+ background-color: #82abda;
+  
+
+}
+.certificate3{
+ 
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  left:110px;
+  bottom:130px;
+  width: 498px;
+  background-color: #949ba1;
+
+}
+.certificate4{
+ 
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  left:110px;
+  bottom:120px;
+  width: 498px;
+background-color: #677480;
+
+}
+.courses1{
+  position: relative;
+  left:160px;
+  top:10px;
+
+}
+.courses{
+  position: relative;
+color: #507ebe;
+  top:20px;
+}

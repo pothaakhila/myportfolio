@@ -100,9 +100,9 @@ top: 168px;
     transform: scale(1.2); /* Scale up the icon on hover */
   }
   .background{
-    background-image: url("https://www.ensembletech.in/wp-content/uploads/2018/07/portfolio-background.jpg");
+   /* background-image: url("https://www.ensembletech.in/wp-content/uploads/2018/07/portfolio-background.jpg");*/
     height: 850px;
-   
+    background-color: #2f2c46;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed !important ;

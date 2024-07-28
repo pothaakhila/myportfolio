@@ -27,7 +27,7 @@
   .navLogo {
     font-size: 1.5rem;
     font-weight: 900;
-    color: rgb(101, 144, 237);
+    color: rgb(246, 247, 249);
     text-decoration: none; /* Ensure the logo doesn't have underline */
   }
   
@@ -130,6 +130,7 @@
     .navLogo{
         position:relative;
         left:10px;
+       
     }
     @keyframes identifier{
         to{

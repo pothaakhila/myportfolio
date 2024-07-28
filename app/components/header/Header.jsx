@@ -2,15 +2,16 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { RiInstagramLine, RiLinkedinBoxFill } from 'react-icons/ri';
-import styles from './header.module.css';
+import styles from './middle.module.css'
 import NaukriIcon from './NaukriIcon';
-import Image from 'next/image';
-import Head from 'next/head';
 
+import Image from 'next/image';
+import Head from 'next/head';   
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa'; // LinkedIn icon
 import { MdOutlineEmail } from 'react-icons/md';
@@ -18,6 +19,7 @@ import SectionHeader from '../section-header/SectionHeader';
 
 const Header = () => {
   const [role, setRole] = useState('Web Developer');
+ 
 
   useEffect(() => {
     AOS.init();
@@ -31,6 +33,7 @@ const Header = () => {
 
     return () => clearInterval(timer); // Corrected cleanup for interval
   }, []);
+ 
 
   return (
     <> 
@@ -38,9 +41,11 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
     <div className={styles.mainsection}>
-      <div className={styles.container}>
+
+
+   <div className={styles.container}>
         <div className={`col-md-7 ${styles.mainsectioncon}`} data-aos="fade-up" data-aos-duration="2000">
-          <h1 className={styles.head}>Hi, Im Potha Akhila</h1>
+       <h1 className={styles.head}>Hi, I'm Potha Akhila</h1>
           <div data-aos="zoom-in" data-aos-duration="2000" className={styles.h3}>
             <h3 className="ml-[3rem] text-[2.2rem] font-[700]">
               <span className="text-[#78b6e6]">{role}</span>
@@ -79,7 +84,10 @@ const Header = () => {
             <button className={styles.btn} data-aos="fade-up" data-aos-duration="1000">
               <a className="btn ml-[4rem] my-[1rem] hover:shadow-none" href="https://drive.google.com/file/d/1zt4AmOOfYYWObWtv9uO3amYpQb8ck_RU/view?usp=drive_link">Download CV</a>
             </button>
-            <button className={styles.btn} data-aos="fade-up" data-aos-duration="2000">Hire Me</button>
+            
+            <button className={styles.btn} data-aos="fade-up" data-aos-duration="2000">
+                <a href="/portfolio" className="btn ml-[4rem] my-[1rem] hover:shadow-none">Hire Me</a>
+              </button>
           </div>
         </div>
       </div>

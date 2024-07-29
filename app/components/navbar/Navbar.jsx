@@ -7,6 +7,7 @@ import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import Link from 'next/link';
 import { GoMoon } from 'react-icons/go';
+import { GoSun } from 'react-icons/go';
 import { usePathname } from 'next/navigation';
 
 
@@ -21,16 +22,33 @@ const data = [
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
   const pathname = usePathname();
 useEffect(()=>{
   if(window.innerWidth > 600){
     setNavOpen(true);
   }
 },[]);
+
+useEffect(() => {
+  if (isDarkMode) {
+    document.body.classList.add(styles.dark);
+  } else {
+    document.body.classList.remove(styles.dark);
+  }
+}, [isDarkMode]);
+
   const closeNavHandler = () => {
     if (window.innerWidth <= 600) {
       setNavOpen(false);
     }
+  };
+
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
@@ -41,7 +59,7 @@ useEffect(()=>{
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.navLogo} onClick={closeNavHandler}>
-            POTHA AKHILA 
+            POTHA &nbsp;&nbsp;AKHILA 
         </Link>
         {navOpen && (
           <ul className={styles.navItems}>
@@ -57,9 +75,9 @@ useEffect(()=>{
            
    
         <div className={styles.navBtns}>
-          <button className={styles.themeBtn}>
-            <GoMoon />
-          </button>
+        <button className={styles.themeBtn} onClick={toggleTheme}>
+              {isDarkMode ? <GoSun /> : <GoMoon />}
+            </button>
           <button className={styles.navBtn} onClick={() => setNavOpen(!navOpen)}>
             {navOpen ? <AiOutlineClose /> : <FaBars />}
           </button>

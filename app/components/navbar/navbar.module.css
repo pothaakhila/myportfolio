@@ -27,10 +27,16 @@
   .navLogo {
     font-size: 1.5rem;
     font-weight: 900;
-    color: rgb(246, 247, 249);
+    color: transparent;
     text-decoration: none; /* Ensure the logo doesn't have underline */
+    -webkit-text-stroke:0.5px orange;
+    animation: back 20s linear infinite;
   }
-  
+  @keyframes back{
+    100%{
+      background-position: 2000px 0;
+    }
+  }
   .navBtns {
     display: flex;
     align-items: center;
@@ -126,6 +132,7 @@
       display: inline-block; /* Show the button in mobile view */
     position: relative;
     right:10px;
+ 
     }
     .navLogo{
         position:relative;
@@ -143,3 +150,46 @@ opacity: 1;
     background-color: rgba(195, 35, 35, 0.8); /* Change to your desired color */
   }
  
+
+
+  /* Light mode styles */
+  .light {
+    --background-color: #f0cc80;
+    --text-color: #000000;
+    --link-color: #000000;
+    --link-active-color: #0000ff;
+  }
+
+  .light a {
+    color: var(--link-color);
+  }
+  
+  .light a.active {
+    color: var(--link-active-color);
+  }
+  
+  .light .themeBtn, .light .navBtn {
+    color: var(--text-color);
+  }
+
+  
+  /* Dark mode styles */
+  .dark {
+    background-color: #cd96c0;
+    --text-color: #ffffff;
+    --link-color: #ffffff;
+    --link-active-color: #bb86fc;
+  }
+  
+
+  .dark a {
+    color: var(--link-color);
+  }
+  
+  .dark a.active {
+    color: var(--link-active-color);
+  }
+  
+  .dark .themeBtn, .dark .navBtn {
+    color: var(--text-color);
+  }

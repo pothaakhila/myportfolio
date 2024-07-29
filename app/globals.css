@@ -102,3 +102,48 @@ a {
     color-scheme: dark;
   }
 }
+
+
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --link-color-light: #000000;
+  --link-active-color-light: #0000ff;
+
+  --background-color-dark: #121212;
+  --text-color-dark: #ffffff;
+  --link-color-dark: #ffffff;
+  --link-active-color-dark: #bb86fc;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.light a {
+  color: var(--link-color-light);
+}
+
+.light a.active {
+  color: var(--link-active-color-light);
+}
+
+.dark {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.dark a {
+  color: var(--link-color-dark);
+}
+
+.dark a.active {
+  color: var(--link-active-color-dark);
+}

@@ -41,7 +41,11 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
     <div className={styles.mainsection}>
-
+    <video className={styles.videobackground} autoPlay muted loop>
+          <source src="/akhila/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
 
    <div className={styles.container}>
         <div className={`col-md-7 ${styles.mainsectioncon}`} data-aos="fade-up" data-aos-duration="2000">
@@ -82,7 +86,7 @@ const Header = () => {
           </div>
           <div className={styles.buttons} data-aos="fade-up" data-aos-duration="2000">
             <button className={styles.btn} data-aos="fade-up" data-aos-duration="1000">
-              <a className="btn ml-[4rem] my-[1rem] hover:shadow-none" href="https://drive.google.com/file/d/1zt4AmOOfYYWObWtv9uO3amYpQb8ck_RU/view?usp=drive_link">Download CV</a>
+              <a className="btn ml-[4rem] my-[1rem] hover:shadow-none" href="/akhila/resume.pdf">Download CV</a>
             </button>
             
             <button className={styles.btn} data-aos="fade-up" data-aos-duration="2000">

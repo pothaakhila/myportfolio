@@ -45,7 +45,7 @@ const Header = () => {
 
    <div className={styles.container}>
         <div className={`col-md-7 ${styles.mainsectioncon}`} data-aos="fade-up" data-aos-duration="2000">
-       <h1 className={styles.head}>Hi, I'm Potha Akhila</h1>
+       <h1 className={styles.head}>Hi, Im Potha Akhila</h1>
           <div data-aos="zoom-in" data-aos-duration="2000" className={styles.h3}>
             <h3 className="ml-[3rem] text-[2.2rem] font-[700]">
               <span className="text-[#78b6e6]">{role}</span>
